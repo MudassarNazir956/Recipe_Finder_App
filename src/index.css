@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.myCard {
+    color: white;
+    background-color: red;
+    padding: 5px;
+    margin: 10px;
+}
