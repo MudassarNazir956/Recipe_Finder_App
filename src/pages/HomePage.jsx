@@ -38,7 +38,7 @@ const HomePage = () => {
 
 
   useEffect(() => {
-    fetchRecipes("Chicken")
+    fetchRecipes("Biryani")
   }, []);
 
 

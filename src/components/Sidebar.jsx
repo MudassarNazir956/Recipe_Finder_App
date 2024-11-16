@@ -1,6 +1,8 @@
 import { Heart, Home } from 'lucide-react'
 import React, { } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import mainImage from "../assests/logo.svg"
+import mdScreenImage from "../assests/mobile-logo.svg"
 
 const Sidebar = () => {
 
@@ -14,8 +16,8 @@ const Sidebar = () => {
         <div className='flex flex-col gap-20 sticky top-10 left-0'>
           <div className='w-full'>
             <Link to="/">
-              <img src="/src/assests/logo.svg" alt="Main Image" className='hidden md:block' />
-              <img src="/src/assests/mobile-logo.svg" alt="Medium Screen Image" className='block md:hidden' />
+              <img src={mainImage} alt="Main Image" className='hidden md:block' />
+              <img src={mdScreenImage} alt="Medium Screen Image" className='block md:hidden' />
             </Link>
           </div>
 
