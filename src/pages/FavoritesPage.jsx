@@ -1,6 +1,7 @@
 import React from 'react'
 import RecipeCard from '../components/RecipeCard';
 import { getRandomColor } from '../lib/utils';
+import errorImage from "../assests/404.svg";
 
 const FavoritesPage = () => {
 
@@ -16,7 +17,7 @@ const FavoritesPage = () => {
 
         {favorites.length === 0 && (
           <div className='h-[80vh] flex flex-col items-center gap-4'>
-            <img src="/src/assests/404.svg" alt="404 svg"
+            <img src={errorImage} alt="404 svg"
               className='h-3/4'
             />
           </div>
